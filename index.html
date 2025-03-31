@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="SemanticScanpath">
+  <!-- <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/> -->
+  <!-- <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/> -->
+  <!-- <meta property="og:url" content="URL OF THE WEBSITE"/> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" /> -->
+  <!-- <meta property="og:image:width" content="1200"/> -->
+  <!-- <meta property="og:image:height" content="630"/> -->
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Human-Robot Interaction, Gaze-based disambiguation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SemanticScanpath</title>
+  <link rel="icon" type="image/x-icon" href="static/images/betty">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+	}
+
+	tr:nth-child(even) {
+	  background-color: #ffc4c4;
+	}
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SemanticScanpath:</h1>
+			<h2 class="title is-1 publication-title">Combining Gaze and Speech for Situated
+	Human-Robot Interaction Using LLMs</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Elisabeth Menendez<sup>🤖</sup>,</span>
+                <span class="author-block">
+                  Michael Gienger<sup>🚀</sup>,</span>
+                  <span class="author-block">
+                    Santiago Martínez<sup>🤖</sup>,</span>
+                 <span class="author-block">
+                    Carlos Balaguer<sup>🤖</sup>,</span> 
+					<span class="author-block">
+                    Anna Belardinelli<sup>🚀</sup></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <a class="author-block"href="https://www.uc3m.es/systems-engineering-automation-department/home" target="_blank"><sup>🤖</sup>Universidad Carlos III de Madrid<br><sup>🚀</sup>Honda Research Institute EU</a>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <!-- <span class="link-block"> -->
+                        <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank" -->
+                        <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                        <!-- <span class="icon"> -->
+                          <!-- <i class="fas fa-file-pdf"></i> -->
+                        <!-- </span> -->
+                        <!-- <span>Paper</span> -->
+                      <!-- </a> -->
+                    <!-- </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block"> -->
+                      <!-- <a href="static/pdfs/supplementary_material.pdf" target="_blank" -->
+                      <!-- class="external-link button is-normal is-rounded is-dark"> -->
+                      <!-- <span class="icon"> -->
+                        <!-- <i class="fas fa-file-pdf"></i> -->
+                      <!-- </span> -->
+                      <!-- <span>Supplementary</span> -->
+                    <!-- </a> -->
+                  <!-- </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/elisabeth-ms/GazeSpeechDisambiguation/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="http://arxiv.org/abs/2503.16548" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero body">
+  <div class="container is-max-desktop">
+    <img src="./static/images/Gaze_speech_disambiguation_horizontal.png">
+    <h2 class="subtitle has-text-centered">
+      Overview of the architecture leveraging the SemanticScanpath representation.
+    </h2>
+  </div>
+</section>
+
+
+<!-- Abstract. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <!-- <h2 class="title is-3">Abstract</h2> -->
+        <div class="content has-text-justified">
+          <p>
+			We introduce here a textual representation combining speech and gaze behavior to prompt a LLM during Human-Robot Interaction.
+			Such multimodal yet compact representation enhanced with the possibility for the LLM to query the current scene content, enables situated reasoning about 
+			the user's underspecified or ambiguous requests, relating speech semantics to the communicative intentions underlying gaze. 
+			In our approach, we jointly collect the transcription of the user's request and the gaze history as a scanpath on the scene, providing a sequence 
+			of fixated semantic Areas-Of-Interest along with dwell time. Such input id fed to the LLM with a tailored system prompt,
+			providing guidelines for reasoning about the gaze but agnostic with respect to the task or the scenario. The system can decide to further ground 
+			the request by inspecting the scene.
+			We show that such representation allows to resolve demonstrative disambiguation (e.g., 'give me that') - a typical problem in situated interaction - but also 
+			to accurately infer user's intents by leveraging gaze to ground ambiguous speech and by focusing on speech content to discard spurious fixations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container is-max-desktop">
+    <div class="hero body">
+      <video id="teaser" autoplay="autoplay" controls autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/semantic_scanpath_compressed.mp4" type="video/mp4">
+      </video>
+      <p class="subtitle has-text-centered">
+        Example of SemanticScanpath-based interaction
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+		<h2 class="title is-3">Experiments and results</h2>
+		 <div class="content has-text-justified">
+          <p>
+			We evaluated the proposed representation in two different scenarios (a breakfast table and a drinks table) and had multiple users make 3 requests to the robot 
+			hinting with their gaze (here, head orientation) to the desired objects
+          </p>
+		  </div>
+		  <table>
+		  <tr>
+			<th>Scenario/Task</th>
+			<th>Abstract task</th>
+			<th>User's request</th>
+			<th>Goal inference</th>
+			<th>Target objects</th>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T1</td>
+			<td>Infer task</td>
+			<td>"Can you help me with this?"</td>
+			<td>Pour cereal in the bowl</td>
+			<td>Cereal box, bowl</td>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T2</td>
+			<td>Disambiguate object instance</td>
+			<td>"Could you pass me that bottle?"</td>
+			<td>Pass the milk bottle for the cereals</td>
+			<td>Milk bottle</td>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T3</td>
+			<td>Infer content</td>
+			<td>"Can I also have some sugar?"</td>
+			<td>Get the small bowl</td>
+			<td>Small bowl</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T1</td>
+			<td>Infer user's preference</td>
+			<td>"I'm thirsty, can I have something to drink?"</td>
+			<td>Preference for the cola</td>
+			<td>Cola bottle</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T2</td>
+			<td>Disambiguate object instance</td>
+			<td>"Could you use this glass?"</td>
+			<td>Use the glass in front of the user</td>
+			<td>Red glass</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T3</td>
+			<td>Infer content</td>
+			<td>"I'd like some ice cubes with it"</td>
+			<td>Get the bowl with the ice</td>
+			<td>Bowl</td>
+		  </tr>
+		</table>
+       
+	  </div>
+	</div>
+	</div>
+<!-- <section class="hero is-small"> -->
+  <div class="hero-body">
+    <div class="container">
+	<div class="columns is-centered">
+	<div class="column is-8">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Accuracy_breakfast.png" alt="MY ALT TEXT"/>
+<!--         <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2> -->
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/accuracy_drink.png" alt="MY ALT TEXT"/>
+        <!-- <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2> -->
+      </div>
+      </div>
+	  </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+<!-- Image carousel -->
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+		<h2>Experiments and results</h2>
+		 <div class="content has-text-justified">
+          <p>
+			We evaluated the proposed representation in two different scenarios (a breakfast table and a drinks table) and had multiple users make 3 requests to the robot 
+			hinting with their gaze (here, head orientation) to the desired objects
+          </p>
+		  <table>
+		  <tr>
+			<th>Scenario/Task</th>
+			<th>Abstract task</th>
+			<th>User's request</th>
+			<th>Goal inference</th>
+			<th>Target objects</th>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T1</td>
+			<td>Infer task</td>
+			<td>"Can you help me with this?"</td>
+			<td>Pour cereal in the bowl</td>
+			<td>Cereal box, bowl</td>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T2</td>
+			<td>Disambiguate object instance</td>
+			<td>"Could you pass me that bottle?"</td>
+			<td>Pass the milk bottle for the cereals</td>
+			<td>Milk bottle</td>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T3</td>
+			<td>Infer content</td>
+			<td>"Can I also have some sugar?"</td>
+			<td>Get the small bowl</td>
+			<td>Small bowl</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T1</td>
+			<td>Infer user's preference</td>
+			<td>"I'm thirsty, can I have something to drink?"</td>
+			<td>Preference for the cola</td>
+			<td>Cola bottle</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T2</td>
+			<td>Disambiguate object instance</td>
+			<td>"Could you use this glass?"</td>
+			<td>Use the glass in front of the user</td>
+			<td>Red glass</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T3</td>
+			<td>Infer content</td>
+			<td>"I'd like some ice cubes with it"</td>
+			<td>Get the bowl with the ice</td>
+			<td>Bowl</td>
+		  </tr>
+		</table>
+        </div>
+	  </div>
+	</div>
+		<div id="results-carousel" class="carousel results-carousel"> -->
+		<!-- <div>
+		<pre>
+		<table>
+		  <tr>
+			<th>Scenario/Task</th>
+			<th>Abstract task</th>
+			<th>User's request</th>
+			<th>Goal inference</th>
+			<th>Target objects</th>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T1</td>
+			<td>Infer task</td>
+			<td>"Can you help me with this?"</td>
+			<td>Pour cereal in the bowl</td>
+			<td>Cereal box, bowl</td>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T2</td>
+			<td>Disambiguate object instance</td>
+			<td>"Could you pass me that bottle?"</td>
+			<td>Pass the milk bottle for the cereals</td>
+			<td>Milk bottle</td>
+		  </tr>
+		  <tr>
+			<td>Breakfast/T3</td>
+			<td>Infer content</td>
+			<td>"Can I also have some sugar?"</td>
+			<td>Get the small bowl</td>
+			<td>Small bowl</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T1</td>
+			<td>Infer user's preference</td>
+			<td>"I'm thirsty, can I have something to drink?"</td>
+			<td>Preference for the cola</td>
+			<td>Cola bottle</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T2</td>
+			<td>Disambiguate object instance</td>
+			<td>"Could you use this glass?"</td>
+			<td>Use the glass in front of the user</td>
+			<td>Red glass</td>
+		  </tr>
+		  <tr>
+			<td>Drink/T3</td>
+			<td>Infer content</td>
+			<td>"I'd like some ice cubes with it"</td>
+			<td>Get the bowl with the ice</td>
+			<td>Bowl</td>
+		  </tr>
+		</table>
+		</pre>
+		</div>
+		 -->
+<!-- 		<div>
+		<pre>
+			<img src="static/images/Accuracy_breakfast.png">
+		</pre>
+		</div>
+		<div>
+		<pre>
+			<img src="static/images/Accuracy_drink.png">
+		</pre>
+		</div>
+		</div>
+
+  </div>
+  </div>
+  </section> -->
+<!-- prompts. -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">System prompt</h2>
+        <div class="content has-text-justified">
+
+        </div>
+      </div>
+    </div>
+    <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+
+      <div>
+        <!-- <h2 class="subtitle has-text-centered"> -->
+          <!-- System prompt -->
+        <!-- </h2> -->
+        <pre>
+          <code class="language-python">
+            """
+            You are a friendly and attentive service agent.
+You control a physical robot called ’the_robot’ and receive requests from the user.
+You have access to functions for gathering information, acting physically, and speaking out loud.
+You receive two types of inputs from the user:
+Speech input: The user will verbally ask for help.
+Gaze history: This is divided into segments, each showing the objects the user likely focused on while uttering the
+speech input and the duration of that focused period (seconds). Some segments may include multiple objects
+ordered by decreasing likelihood (closer objects are mixed).
+
+IMPORTANT: Obey the following rules:
+1. Always start gathering all available information related to the request from the scene and the input.
+2. Always focus on understanding the user’s intent based on context, speech input, and gaze history. Use gaze to clarify
+speech, when requests are ambiguous. Use speech to clarify gaze, when requests are ambiguous.
+3. Provide a reason for every response to user requests using the ’reasoning’ function to explain decisions. Be concise
+and clear.
+4. Speak out loud using the ’speak’ function to communicate clearly and concisely with the user.
+5. If you are not sure about the user’s intent, ask for clarification.
+6. Provide the ’required_objects’ for every user request.
+
+REMEMBER YOUR RULES!! TIPS FOR INTERPRETING GAZE:
+1. Referred objects are usually gazed ahead of utterance, but also right before looking at you.
+2. Intentionally referred objects are usually looked at longer and more frequently.
+3. Spurious fixations are usually short and mixed with closer objects.
+            """
+          </code>
+        </pre>
+      </div>
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+       <!--  <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+      <!-- Your image here -->
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+           <!--  <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div> --> 
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--   <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. 
+			<!-- which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer -->
+			<br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
