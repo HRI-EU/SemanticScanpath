@@ -170,7 +170,8 @@
 			providing guidelines for reasoning about the gaze but agnostic with respect to the task or the scenario. The system can decide to further ground 
 			the request by inspecting the scene.
 			We show that such representation allows to resolve demonstrative disambiguation (e.g., 'give me that') - a typical problem in situated interaction - but also 
-			to accurately infer user's intents by leveraging gaze to ground ambiguous speech and by focusing on speech content to discard spurious fixations.
+			to accurately infer user's intents by leveraging gaze to ground ambiguous speech and by focusing on speech content to discard spurious fixations. The proposed representation 
+			outperforms not just a purely verbal baseline, but also other control conditions with less rich spatio-temporal information.
           </p>
         </div>
       </div>
@@ -196,7 +197,7 @@
       <div class="column">
 		<h2 class="title is-3">Experiments and results</h2>
 		 <div class="content has-text-justified">
-          <p>
+          <p style="margin-top:30px">
 			We evaluated the proposed representation in two different scenarios (a breakfast table and a drinks table) and had multiple users make 3 requests to the robot 
 			hinting with their gaze (here, head orientation) to the desired objects
           </p>
@@ -206,12 +207,12 @@
 			<th>Scenario/Task</th>
 			<th>Abstract task</th>
 			<th>User's request</th>
-			<th>Goal inference</th>
+			<th>Intended reasoning</th>
 			<th>Target objects</th>
 		  </tr>
 		  <tr>
 			<td>Breakfast/T1</td>
-			<td>Infer task</td>
+			<td>Infer user's intent</td>
 			<td>"Can you help me with this?"</td>
 			<td>Pour cereal in the bowl</td>
 			<td>Cereal box, bowl</td>
@@ -252,7 +253,17 @@
 			<td>Bowl</td>
 		  </tr>
 		</table>
-       
+		
+		
+		 <div class="content has-text-justified">
+		<p style="margin-top:50px">
+       The Semantic Scanpath representation enriched with scene object information (Semantic Scanpath +scene) had the best accuracy on average in resolving the three tasks across both scenarios. It performed better than just speech and scene information (speech + scene), 
+	   than a scanpath representation with shuffled fixations (shuffled gaze), or without dwell time information (gaze no dwell time), or just considering the most likely gazed object (gaze only first object).
+	   
+	   To gain an idea of how much a noisy scanpath could affect the accuracy, we also looked at how the gaze dwelling was distributed across targets, distractors, and irrelevant objects. Accurately disambiguated references rely on longer time spent on targets, while still
+	    filtering out spurious glances or irrelevant fixations.
+	   <p>
+	   </div>
 	  </div>
 	</div>
 	</div>
@@ -264,14 +275,21 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/Accuracy_breakfast.png" alt="MY ALT TEXT"/>
+        <img src="static/images/Accuracy_conditions_horizontal.png" alt="MY ALT TEXT"/>
 <!--         <h2 class="subtitle has-text-centered">
           First image description.
         </h2> -->
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/Accuracy_drink.png" alt="MY ALT TEXT"/>
+        <img src="static/images/Accuracy_tasks_scenarios.png" alt="MY ALT TEXT"/>
+        <!-- <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2> -->
+      </div>
+	  <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/GazeDistributionNew.png" alt="MY ALT TEXT"/>
         <!-- <h2 class="subtitle has-text-centered">
           Second image description.
         </h2> -->
@@ -467,6 +485,7 @@ REMEMBER YOUR RULES!! TIPS FOR INTERPRETING GAZE:
           </code>
         </pre>
       </div>
+	  
 <!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
